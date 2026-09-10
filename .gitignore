@@ -1,5 +1,7 @@
 
 # General
+./target
+target
 .env
 *.exe
 

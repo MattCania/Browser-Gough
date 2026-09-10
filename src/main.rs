@@ -1,3 +1,4 @@
+mod types;
 mod url;
 use std::io;
 
@@ -17,7 +18,7 @@ fn input_http() -> String {
         .read_line(&mut url)
         .expect("Failed to receive input");
 
-    return url;
+    url
 }
 
 
