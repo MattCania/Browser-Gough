@@ -4,7 +4,7 @@ use std::io;
 fn main() {
     let http_url = input_http();
 
-    println("| Welcome to Gough Browser |")
+    println!("| Welcome to Smoove Browser |");
     url::parse(&http_url);
 
 }   
