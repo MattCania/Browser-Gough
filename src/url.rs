@@ -12,16 +12,16 @@ pub fn parse(url: &str) {
     let query_string = String::new();
     let fragment = String::new();
 
+    println!("Parsing: {}", url);
+
     if let Some((s, _)) = url.split_once("://") {
         scheme = s.to_string();
     }
     
     if scheme != "http" && scheme != "https" {
         println!("Invalid Scheme!");
-        return;
+        return; // Supposedly returns an invalid response
     }
-
-    println!("Parsing: {}", url);
 
     let split = url.split("/");
     for parts in split.filter(|parts| !parts.is_empty()) {
